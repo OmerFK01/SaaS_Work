@@ -33,6 +33,6 @@ jobs:
         run: npm install -g surge
         
       - name: Run Surge
-        run: surge ./ SaaS_Work.surge.sh --token ${{secret.Surge_Token}}
+        run: surge ./ SaaS_Work.surge.sh --token ${{secrets.Surge_Token}}
         
       
